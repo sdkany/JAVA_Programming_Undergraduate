@@ -1,5 +1,12 @@
-package chapter04.oop.abstracts;
+package chapter04.oop3.abstracts;
 
+/**
+ * @author SDKany
+ * @ClassName Animal
+ * @Date 2023/4/6 15:51
+ * @Version V1.0
+ * @Description Animal 动物抽象类，拥有私有成员变量，成员方法，构造方法等，体现构造方法的重载性质，面向对象的封装性
+ */
 public abstract class Animal {
     private String name;
     private int age;

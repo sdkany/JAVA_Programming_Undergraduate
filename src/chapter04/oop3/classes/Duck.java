@@ -1,11 +1,17 @@
-package chapter04.oop.classes;
+package chapter04.oop3.classes;
 
-import chapter04.oop.abstracts.Animal;
-import chapter04.oop.abstracts.SwimmingBird;
-import chapter04.oop.interfaces.Flying;
-import chapter04.oop.interfaces.Foraging;
-import chapter04.oop.interfaces.Swimming;
+import chapter04.oop3.abstracts.Animal;
+import chapter04.oop3.abstracts.SwimmingBird;
+import chapter04.oop3.interfaces.Flying;
+import chapter04.oop3.interfaces.Foraging;
 
+/**
+ * @author SDKany
+ * @ClassName Duck
+ * @Date 2023/4/6 15:51
+ * @Version V1.0
+ * @Description Duck类，鸭子是一种可以游泳的鸟类，并且鸭子经常觅食
+ */
 public class Duck extends SwimmingBird implements Foraging {
     public Duck() {
     }

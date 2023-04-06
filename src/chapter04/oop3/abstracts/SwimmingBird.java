@@ -1,8 +1,15 @@
-package chapter04.oop.abstracts;
+package chapter04.oop3.abstracts;
 
-import chapter04.oop.interfaces.Running;
-import chapter04.oop.interfaces.Swimming;
+import chapter04.oop3.interfaces.Running;
+import chapter04.oop3.interfaces.Swimming;
 
+/**
+ * @author SDKany
+ * @ClassName Bird
+ * @Date 2023/4/6 15:51
+ * @Version V1.0
+ * @Description SwimmingBird抽象类，继承自Bird类，并实现Running, Swimming接口
+ */
 public abstract class SwimmingBird extends Bird implements Running, Swimming {
 
     public SwimmingBird() {
