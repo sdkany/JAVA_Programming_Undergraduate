@@ -33,7 +33,7 @@ public class Animal extends Object{
 
         animal2 = animal1;
 
-        //System.gc();
+        System.gc();
 
         System.out.println("当进行animal2 = animal1操作后");
         System.out.println("第二只动物的名字是：" + animal2.name);
