@@ -6,5 +6,6 @@ public class Example02 {
 		p1.age = 18;              // 为age属性赋值
 		p1.speak();               // 调用对象的方法
 		p2.speak();
+		Example05.add01(1,2);
 	}
 }

@@ -61,7 +61,7 @@ public class People {
         People people = new People("张三", 18, false);
         System.out.println(people);
 
-        People people2;
+        People people2 = null;
         try{
             people2 = new People("张三", -2, true);
         } catch (Exception e){

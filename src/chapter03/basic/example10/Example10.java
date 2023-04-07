@@ -26,6 +26,7 @@ public class Example10 {
 		Person p1 = new Person(18); 
 		Person p2 = new Person("张三",32);
 		p1.speak();
+		p1.say();
 		p2.say();
 	}
 }

@@ -11,10 +11,10 @@ public class Animal extends Object{
     String name;
     int age;
 
-//    @Override
-//    public void finalize(){
-//        System.out.println("对象被回收了");
-//    }
+    @Override
+    public void finalize(){
+        System.out.println("对象被回收了");
+    }
 
     public static void main(String[] args){
         Animal animal1 = new Animal();
@@ -24,7 +24,7 @@ public class Animal extends Object{
         Animal animal2 = new Animal();
         animal2.age = 2;
         animal2.name = "小强";
-
+//
         System.out.println("第一只动物的名字是：" + animal1.name);
         System.out.println("第一只动物的年龄是：" + animal1.age);
 
@@ -33,7 +33,7 @@ public class Animal extends Object{
 
         animal2 = animal1;
 
-        //System.gc();
+        System.gc();
 
         System.out.println("当进行animal2 = animal1操作后");
         System.out.println("第二只动物的名字是：" + animal2.name);
@@ -41,7 +41,7 @@ public class Animal extends Object{
 
         animal2.name = "小白";
 
-        System.out.println("当进行animal2.name = \"小白\"操作后");
+        System.out.println("当进行animal2.name =\\ \"小白\"操作后");
         System.out.println("第一只动物的名字是：" + animal1.name);
         System.out.println("第一只动物的年龄是：" + animal1.age);
     }
