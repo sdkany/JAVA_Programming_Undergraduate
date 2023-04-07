@@ -5,7 +5,7 @@ package chapter03.oop3;
  * @ClassName People
  * @Date 2023/4/6 15:51
  * @Version V1.0
- * @Description People类
+ * @Description People类，封装，构造函数重载
  */
 public class People {
     private String name;
@@ -60,7 +60,6 @@ public class People {
     public static void main(String[] args) {
         People people = new People("张三", 18, false);
         System.out.println(people);
-
 
         People people2;
         try{
