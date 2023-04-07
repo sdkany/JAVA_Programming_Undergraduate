@@ -63,7 +63,7 @@ public class People {
 
         People people2;
         try{
-        people2 = new People("张三", -2, true);
+            people2 = new People("张三", -2, true);
         } catch (Exception e){
             System.out.println(e.getMessage());
         } finally {

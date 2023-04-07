@@ -8,18 +8,18 @@ package chapter03.oop2.main;
  * @Description Test1 测试类1，与Tank类在同一个包中
  */
 public class Test1 {
-    static Tank tank = new Tank();
 
     public static void main(String[] args) {
+        Tank tank = new Tank();
 
-//        tank.publicInt = 1;
-//        tank.protectedInt = 2;
-//        tank.defaultInt = 3;
-//        tank.privateInt = 4;
+        tank.publicInt = 1;
+        tank.protectedInt = 2;
+        tank.defaultInt = 3;
+ //       tank.privateInt = 4;
 //
-//        tank.publicMethod();
-//        tank.protectedMethod();
-//        tank.defaultMethod();
-//        tank.privateMethod();
+        tank.publicMethod();
+        tank.protectedMethod();
+        tank.defaultMethod();
+ //       tank.privateMethod();
     }
 }
