@@ -1,9 +1,11 @@
 package chapter04.oop3.classes;
 
 import chapter04.oop3.abstracts.Animal;
+import chapter04.oop3.abstracts.Bird;
 import chapter04.oop3.abstracts.SwimmingBird;
 import chapter04.oop3.interfaces.Flying;
 import chapter04.oop3.interfaces.Foraging;
+import chapter04.oop3.interfaces.Swimming;
 
 /**
  * @author SDKany
@@ -72,18 +74,33 @@ public class Duck extends SwimmingBird implements Foraging {
 
     public static void main(String[] args){
         Animal duck = new Duck("唐老鸭", 18);
-        System.out.println(duck);
-
+//        System.out.println(duck);
+//
         Animal eagle = new Eagle("老鹰", 13);
-        System.out.println(eagle);
+//        System.out.println(eagle);
 
-        duck.shout();
+        //duck.shout();
+        //eagle.shout();
 
-        eagle.shout();
+        if(duck instanceof Animal) System.out.println("duck 是 Animal");
 
-        ((SwimmingBird)duck).change(1,2);
-        ((Foraging) duck).seekFood();
-        ((Foraging) duck).full();
-        ((Flying) duck).land();
+        if(duck instanceof Bird) System.out.println("duck 是 Bird");
+        if(duck instanceof Swimming) System.out.println("duck 是 Swimming");
+
+
+        if(eagle instanceof Swimming)
+            ((Swimming)eagle).swim();
+        else
+            System.out.println("eagle 不是 Swimming");
+
+//        if(eagle instanceof SwimmingBird)
+//            System.out.println("eagle 是 SwimmingBird");
+//        else
+//            System.out.println("eagle 不是 SwimmingBird");
+
+//        ((SwimmingBird)duck).change(1,2);
+//        ((Foraging) duck).seekFood();
+//        ((Foraging) duck).full();
+//        ((Flying) duck).land();
     }
 }

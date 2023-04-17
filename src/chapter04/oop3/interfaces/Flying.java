@@ -18,7 +18,7 @@ public interface Flying {
     // 定义一个静态常量
     public static final String description = "这是一个对Flying接口的描述，是常量";
 
-    // 定义2个抽象类
+    // 定义2个抽象方法
     public abstract void takeOff();
     void land();
 

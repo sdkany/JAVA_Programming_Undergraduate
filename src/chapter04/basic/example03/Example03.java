@@ -18,6 +18,10 @@ class Dog extends Animal {
 	void printName() {
 		System.out.println("name=" + super.name);// 访问父类的成员变量
 	}
+
+	public Dog() {
+		super();
+	}
 }
 //定义测试类 
 public class Example03{

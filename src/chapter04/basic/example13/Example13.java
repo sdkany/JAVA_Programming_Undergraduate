@@ -1,8 +1,8 @@
 package chapter04.basic.example13;
 //定义了Animal接口
 interface Animal {
-	int ID = 1;       // 定义全局常量
-	void breathe();   // 定义抽象方法breathe()
+	public static int ID = 1;       // 定义全局常量
+	abstract void breathe();   // 定义抽象方法breathe()
 	// 定义一个默认方法
 	default void getType(String type){
 		System.out.println("该动物属于："+type);

@@ -1,4 +1,8 @@
 package chapter04.basic.example01;
+
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
 //定义Animal类
 class Animal {
 	String name; // 声明name属性
@@ -11,7 +15,7 @@ class Animal {
 class Dog extends Animal {
 	private String color;
 	// 定义color的set和get方法
-	public void setColor(String com) {
+	public void setColor(String color) {
 		this.color = color;
 	}
 	public String getColor() {

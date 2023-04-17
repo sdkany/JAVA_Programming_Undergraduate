@@ -17,5 +17,4 @@ public abstract class Bird extends Animal implements Flying {
         super(name, age);
     }
 
-
 }

@@ -9,7 +9,7 @@ class Animal {
 //定义Dog类继承Animal类
 class Dog extends Animal {
 	public Dog() {
-		super("沙皮狗");          // 调用父类有参的构造方法
+		super(Dog.class.getSimpleName());          // 调用父类有参的构造方法
 	}
 }
 //定义测试类

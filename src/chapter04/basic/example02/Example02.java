@@ -9,9 +9,15 @@ class Animal {
 //定义Dog类继承动物类
 class Dog extends Animal {    
 	// 定义狗叫的方法
-	void shout() {			 
-		System.out.println("汪汪……");
-	}
+
+	@Override
+	void shout() {
+		System.out.println("汪汪……");	}
+
+//	@Override
+//	void shout() {
+//
+//	}
 }
 //定义测试类
 public class Example02 {	
