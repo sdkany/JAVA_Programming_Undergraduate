@@ -34,11 +34,18 @@ public class Test {
         Abs abs = new Abs() {
             @Override
             void test1() {
-                System.out.println("这是一个重写了抽象类的匿名内部类中的方法，该方法重写了抽象类中的抽象方法！");
+                System.out.println("抽象类匿名实现");
             }
         };
-
         abs.test1();
+//        Abs abs = new Abs() {
+//            @Override
+//            void test1() {
+//                System.out.println("这是一个重写了抽象类的匿名内部类中的方法，该方法重写了抽象类中的抽象方法！");
+//            }
+//        };
+
+        //abs.test1();
 
         Inter inter = new Inter() {
             @Override
