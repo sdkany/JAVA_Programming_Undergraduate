@@ -1,8 +1,5 @@
 package chapter04.basic.example01;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-
 //定义Animal类
 class Animal {
 	String name; // 声明name属性
