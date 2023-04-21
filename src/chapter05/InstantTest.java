@@ -1,6 +1,8 @@
 package chapter05;
 
 import java.time.Instant;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 /**
  * @author SDKany
@@ -26,5 +28,8 @@ public class InstantTest {
         System.out.println("instant3的时间为："+instant3);
 
         System.out.println("从时间对象获取的Instant实例为：" + Instant.from(now));
+
+        ZonedDateTime zonedDateTime = now.atZone(ZoneId.of("Asia/Shanghai"));
+        System.out.println(zonedDateTime);
     }
 }
