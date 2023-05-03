@@ -1,4 +1,7 @@
 package chapter04.basic.example35;
+
+import java.io.*;
+
 public class Example36 {
 	// 下面的方法实现了两个整数相除，
      public static int divide(int x,int y) throws DivideByMinusException, IllegalArgumentException {
@@ -24,6 +27,28 @@ public class Example36 {
 		} finally {
 
 		}
+
+		File file = new File("C:\\Users\\SDKany\\Desktop\\x.tt");
+		String result;
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new FileReader(file));
+			while((result = reader.readLine()) != null) {
+				System.out.println(result);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (reader != null) {
+				try {
+					reader.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+
 	}
 }
 

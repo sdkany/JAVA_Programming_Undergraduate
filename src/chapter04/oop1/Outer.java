@@ -52,12 +52,12 @@ public class Outer {
         System.out.println("外部类的普通成员测试方法，test3");
         int a = 123;
         class Inner3 { //局部内部类
-            int n = 64;
+            int nn = 64;
             void show(){
                 int n = 32;
                 System.out.println("局部内部类的show方法");
                 System.out.println("外部类的n=" + Outer.this.n + ", 外部类的m=" + Outer.m);
-                System.out.println("局部内部类的n=" + this.n);
+                System.out.println("局部内部类的n=" + this.nn);
                 test1();
                 test2();
                 System.out.println(a);

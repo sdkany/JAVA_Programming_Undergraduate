@@ -6,7 +6,8 @@ public class Example14 {
 		// 得到表示进程的Process对象
 		Process process = rt.exec("notepad.exe");
 		// 程序休眠3秒
-		Thread.sleep(3000); 
+		Thread.sleep(3000);
+		System.out.println(process);
 		// 关闭进程
 		process.destroy();
 	}
