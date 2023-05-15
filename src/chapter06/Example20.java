@@ -10,9 +10,9 @@ class CustomComparator implements Comparator { // 自定义比较器
 public class Example20 {
 	public static void main(String[] args) {
 		Map map = new TreeMap(new CustomComparator()); // 创建TreeMap集合
-		map.put("2", "Rose");
-		map.put("1", "Jack");
-		map.put("3", "Lucy");
+		map.put("2", new Integer(222));
+		map.put("1", new Integer(111));
+		map.put("3", new Integer(3333));
 		System.out.println(map);
 	}
 }

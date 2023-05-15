@@ -8,8 +8,14 @@ public class Example17 {
 		map.put("3", "Lucy");
 		System.out.println(map);
 		Collection values = map.values(); // 获取Map集合中value值集合对象
+		System.out.println(values);
+		System.out.println("是否包含值：" + map.containsValue("Lucy"));
+		System.out.println(map.keySet());
+		System.out.println("是否包含key：" + map.containsKey("1"));
+		System.out.println("删除指定的key对应的值为：" + map.remove("1"));
+		System.out.println(map);
 		// 遍历Map集合所有值对象V
-		values.forEach(v -> System.out.println(v));
+		//values.forEach(v -> System.out.println(v));
 	}
 }
 
