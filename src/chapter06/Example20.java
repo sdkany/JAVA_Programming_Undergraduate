@@ -14,5 +14,7 @@ public class Example20 {
 		map.put("1", new Integer(111));
 		map.put("3", new Integer(3333));
 		System.out.println(map);
+
+		//Map map1 = new HashMap((Object x,Object y) -> return 1;)
 	}
 }

@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Example13 {
 	public static void main(String[] args) {
 		// 创建File对象，并指定文件路径
-		File file = new File("C:\\JAVA_Programming_Undergraduate\\src");
+		File file = new File("C:\\Users\\SDKany\\SynologyDrive\\工作相关-东莞理工\\科研相关\\2023年面上项目评审");
 		// 判断是否是目录
 		if (file.isDirectory()) {
 			// 获取目录中的所有文件的名称
@@ -20,13 +20,14 @@ public class Example13 {
 			String[] fileNames = file.list(new FilenameFilter() {
 				@Override
 				public boolean accept(File dir, String name) {
-					if (name.endsWith(".java"))
+					if (name.endsWith(".pdf"))
 						return true;
 					return false;
 				}
 			});
 			// 对指定路径下的文件或目录进行遍历
-			Arrays.asList(fileNames).forEach(s -> System.out.println(s));
+			Arrays.asList(fileNames).forEach(s -> System.out.println(s.replaceAll(".pdf", "")));
 		}
+
 	}
 }
