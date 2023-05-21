@@ -5,9 +5,10 @@ public class Example12 {
 	private static void createAndShowGUI() {
 		// 1、创建一个JFrame容器窗口
 		JFrame f = new JFrame("JFrame窗口");
+		Font font=new Font("宋体",Font.BOLD,40);
 		f.setLayout(new BorderLayout());
-		f.setSize(400, 350);
-		f.setLocation(500, 500);
+		f.setSize(400, 380);
+		f.setLocation(550, 550);
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 2、创建一个JLabel标签组件，用来展示图片
@@ -22,6 +23,7 @@ public class Example12 {
 		// 3、创建一个页尾JPanel面板，并加入JLabel标签组件
 		JPanel panel = new JPanel();
 		JLabel label2 = new JLabel("欢迎进入水果超市",JLabel.CENTER);
+		label2.setFont(font);
 		panel.add(label2);
 		// 4、向JFrame聊天窗口容器的顶部和尾部分别加入JLabel和JPanel组件
 		f.add(label1, BorderLayout.PAGE_START);

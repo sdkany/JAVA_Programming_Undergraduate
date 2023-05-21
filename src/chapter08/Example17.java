@@ -1,11 +1,13 @@
 package chapter08;
+import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 public class Example17 {
 	private static void createAndShowGUI() {
 		// 1、创建一个JFrame容器窗口
 		JFrame f = new JFrame("JFrame窗口");
-		f.setSize(300, 200);
+		Font font = new Font("宋体",Font.BOLD,40);
+		f.setSize(550, 400);
 		f.setLocation(300, 200);
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -14,6 +16,8 @@ public class Example17 {
 		// 2.1、创建两个JMenuItem菜单项，并加入到JPopupMenu组件中
 		JMenuItem item1 = new JMenuItem("查看");
 		JMenuItem item2 = new JMenuItem("刷新");
+		item1.setFont(font);
+		item2.setFont(font);
 		popupMenu.add(item1);
 		popupMenu.addSeparator();
 		popupMenu.add(item2);

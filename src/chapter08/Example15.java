@@ -5,8 +5,9 @@ public class Example15 {
 	private static void createAndShowGUI() {
 		// 1、创建一个JFrame容器窗口
 		JFrame f = new JFrame("JFrame窗口");
+		Font font=new Font("宋体",Font.BOLD,40);
 		f.setLayout(new BorderLayout());
-		f.setSize(300, 300);
+		f.setSize(1000, 300);
 		f.setLocation(600, 500);
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,8 +21,10 @@ public class Example15 {
 		comboBox.addItem("天津");
 		comboBox.addItem("南京");
 		comboBox.addItem("上海");
+		comboBox.setFont(font);
 		// 2.3、创建JTextField单行文本框组件，用来展示用户选择项
-		JTextField textField = new JTextField(20);
+		JTextField textField = new JTextField(25);
+		textField.setFont(font);
 		// 2.4、为JComboBox下拉框组件注册动作监听器
 		comboBox.addActionListener(e -> {
 			String item = (String) comboBox.getSelectedItem();

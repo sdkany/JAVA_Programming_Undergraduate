@@ -11,6 +11,7 @@ public class Example08 {
 		f.setVisible(true);
          f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JButton but = new JButton("Button");// 创建按钮对象
+		but.setFont(new Font("宋体", Font.PLAIN, 40));
 		f.add(but);                         // 在窗口添加按钮组件
 		// 为按钮添加鼠标事件监听器
 		but.addMouseListener(new MouseListener() {

@@ -7,8 +7,8 @@ public class Example13 {
 		// 1、创建一个JFrame容器窗口
 		JFrame f = new JFrame("JFrame窗口");
 		f.setLayout(new BorderLayout());
-		f.setSize(300, 300);
-		f.setLocation(600, 500);
+		f.setSize(400, 400);
+		f.setLocation(500, 500);
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 2、创建一个JLabel标签组件，标签文本居中对齐
@@ -18,7 +18,9 @@ public class Example13 {
 		JPanel panel = new JPanel();
 		// 3.1、创建两个JCheckBox复选框，并添加到JPanel组件中
 		JCheckBox italic = new JCheckBox("ITALIC");
+		italic.setFont(new Font("宋体",  Font.PLAIN, 40));
 		JCheckBox bold = new JCheckBox("BOLD");
+		bold.setFont(new Font("宋体",  Font.PLAIN, 40));
 		// 3.2、为复选框定义ActionListener监听器
 		ActionListener listener = new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

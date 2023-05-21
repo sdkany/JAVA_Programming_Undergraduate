@@ -6,9 +6,10 @@ public class Example09 {
 	private static void createAndShowGUI() {
 		JFrame f = new JFrame("KeyEvent");
 		f.setLayout(new FlowLayout());
-		f.setSize(400, 300);
+		f.setSize(500, 300);
 		f.setLocation(600, 600);
-		JTextField tf = new JTextField(30); // 创建文本框对象
+		JTextField tf = new JTextField(20); // 创建文本框对象
+		tf.setFont(new Font("宋体", Font.PLAIN, 40));
 		f.add(tf);                          // 在窗口中添加文本框组件
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

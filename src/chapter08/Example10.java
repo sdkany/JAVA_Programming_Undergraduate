@@ -5,6 +5,7 @@ public class Example10 {
 	private static void createAndShowGUI() {
 		// 1、创建一个JFrame容器窗口
 		JFrame f = new JFrame("PanelDemo");
+		Font font=new Font("宋体",Font.BOLD,40);
 		f.setLayout(new BorderLayout());
 		f.setSize(350, 200);
 		f.setLocation(300, 200);
@@ -21,11 +22,11 @@ public class Example10 {
 		// 定义一个JPanel面板组件
 		JPanel panel = new JPanel();
 		// 在JPanel面板中添加5个按钮
-		panel.add(new JButton("按钮1"));
-		panel.add(new JButton("按钮2"));
-		panel.add(new JButton("按钮3 "));
-		panel.add(new JButton("按钮4"));
-		panel.add(new JButton("按钮5"));
+		for (int i = 0; i < 5; ) {
+			JButton btn1 = new JButton("按钮" + ++i);
+			btn1.setFont(font);
+			panel.add(btn1);
+		}
 		// 设置JPanel面板在滚动面板JScrollPane中显示
 		scrollPane.setViewportView(panel);
 		// 4、向JFrame容器窗口中添加JScrollPane滚动面板组件

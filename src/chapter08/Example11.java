@@ -5,19 +5,23 @@ public class Example11 {
 	private static void createAndShowGUI() {
 		// 1、创建一个JFrame聊天窗口
 		JFrame f = new JFrame("聊天窗口");
+		Font font=new Font("宋体",Font.BOLD,40);
 		f.setLayout(new BorderLayout());
-		f.setSize(400, 300);
+		f.setSize(900, 700);
 		f.setLocation(300, 200);
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 2、创建一个JTextArea文本域，用来显示多行聊天信息
 		JTextArea showArea = new JTextArea(12, 34);
+		showArea.setFont(font);
 		// 创建一个JScrollPane滚动面板组件，将JTextArea文本域作为其显示组件
 		JScrollPane scrollPane = new JScrollPane(showArea);
 		showArea.setEditable(false); // 设置文本域不可编辑
 		// 3、创建一个JTextField文本框，用来输入单行聊天信息
 		JTextField inputField = new JTextField(20);
-		JButton btn = new JButton("发送"); 
+		inputField.setFont(font);
+		JButton btn = new JButton("发送");
+		btn.setFont(font);
 		// 为按钮添加监听事件
 		btn.addActionListener(e -> {
 			String content = inputField.getText();
@@ -34,6 +38,7 @@ public class Example11 {
 		// 3、创建一个JPanel面板组件
 		JPanel panel = new JPanel();
 		JLabel label = new JLabel("聊天信息");// 创建一个标签
+		label.setFont(font);
 		panel.add(label);                  // 将标签组件添加到JPanel面板
 		panel.add(inputField);             // 将文本框添加到JPanel面板
 		panel.add(btn);                    // 将按钮添加到JPanel面板

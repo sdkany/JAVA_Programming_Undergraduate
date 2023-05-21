@@ -6,6 +6,7 @@ public class Example14 {
 	private static void createAndShowGUI() {
 		// 1、创建一个JFrame容器窗口
 		JFrame f = new JFrame("JFrame窗口");
+		Font font=new Font("宋体",Font.BOLD,40);
 		f.setLayout(new BorderLayout());
 		f.setSize(300, 300);
 		f.setLocation(600, 500);
@@ -20,7 +21,9 @@ public class Example14 {
 		ButtonGroup group = new ButtonGroup();
 		// 3.2、创建二个JRadioButton单选按钮组件
 		JRadioButton italic = new JRadioButton("ITALIC");
+		italic.setFont(new Font("宋体",  Font.PLAIN, 40));
 		JRadioButton bold = new JRadioButton("BOLD");
+		bold.setFont(new Font("宋体",  Font.PLAIN, 40));
 		// 3.3、将二个JRadioButton单选按钮组件加入到同一个ButtonGroup组中
 		group.add(italic);
 		group.add(bold);

@@ -1,4 +1,5 @@
 package chapter08;
+import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 // 自定义事件监听器类
@@ -15,7 +16,8 @@ public class Example06 {
 		f.setSize(300, 200);
 		f.setLocation(700,600);
 		// 创建一个按钮组件，作为事件源
-		JButton btn = new JButton("按钮");  
+		JButton btn = new JButton("按钮");
+		btn.setFont(new Font("宋体", Font.PLAIN, 40));
 		// 为按钮组件事件源添加自定义监听器
 		btn.addActionListener(new MyListener());
 		btn.addFocusListener(new FocusListener() {

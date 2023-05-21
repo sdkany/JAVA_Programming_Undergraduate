@@ -9,13 +9,13 @@ public class Example02_1 {
         // 创建并设置JFrame容器窗口
         JFrame frame = new JFrame("JFrameTest");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(450, 350);
+        frame.setSize(550, 350);
         frame.setLocation(1000,300);
         frame.setLayout(new FlowLayout());
         JButton button1 = new JButton("模态对话框");
         JButton button2 = new JButton("非模态对话框");
-        button1.setFont(new Font(null, 0, 24));
-        button2.setFont(new Font(null, 0, 24));
+        button1.setFont(new Font(null, 0, 40));
+        button2.setFont(new Font(null, 0, 40));
         frame.add(button1);
         frame.add(button2);
         frame.setVisible(true);
