@@ -33,7 +33,7 @@ public class GridBagLayoutTest2 extends JFrame {
         Button btn3 = new Button("btn3");
         layout.setConstraints(btn3,
                 new GridBagConstraints(0,1,1, 1,
-                        1, 1, GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                        3, 3, GridBagConstraints.CENTER, GridBagConstraints.BOTH,
                         new Insets(0, 0, 0, 0), 0, 0));
         frame.add(btn3);
         frame.setVisible(true);

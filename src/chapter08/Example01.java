@@ -12,7 +12,7 @@ public class Example01 {
         frame.setSize(450, 350);
         // 设置窗口内容的背景颜色getContentPane()是为了获取窗口的容器，窗口本身中不能直接添加组件或者设置背景
         frame.getContentPane().setBackground(Color.BLUE);
-        frame.setLocation(1000,100);
+        frame.setLocation(400,100);
         frame.pack();
         // 展示JFrame容器窗口
         frame.setVisible(true);
