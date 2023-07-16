@@ -12,14 +12,13 @@ class SaleThread implements Runnable {
 				}
 				System.out.println(Thread.currentThread().getName()
 						+ " 正在发售第 " + tickets-- + " 张票 ");
-			}
+			}else break;
 		}
 	}
 }
 public class Example11 {
 	public static void main(String[] args) {
 		SaleThread saleThread = new SaleThread();
-		// 创建并开启四个线程，模拟4个售票窗口
 		new Thread(saleThread, "窗口1").start();
 		new Thread(saleThread, "窗口2").start();
 		new Thread(saleThread, "窗口3").start();

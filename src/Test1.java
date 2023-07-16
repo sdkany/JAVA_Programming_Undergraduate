@@ -7,8 +7,15 @@
  */
 public class Test1 {
     public static void main(String[] args) {
-        System.out.println(Outer.test1());
-
-        Outer.printfff(Outer.test1());
+        int m = 8;
+        int item = 8;
+        int sum = 0;
+        for (int i = 0; i < 10; i ++){
+            sum = sum + item;
+            item = item * 10 + m;
+        }
+        System.out.println(sum);
     }
 }
+//9876543200
+//1286608608

@@ -5,13 +5,16 @@ class SaleThread3 implements Runnable {
 	public void run() {
 		while (true) {
 			saleTicket(); // 调用售票方法
+			try {Thread.sleep(100);}
+			catch (InterruptedException e) {e.printStackTrace();}
+			if(tickets <= 0) break;
 		}
 	}
 	// 定义一个同步方法saleTicket()
 	private synchronized void saleTicket() {
 		if (tickets > 0) {
 			try {
-				Thread.sleep(100); // 模拟售票耗时过程
+				Thread.sleep(300); // 模拟售票耗时过程
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

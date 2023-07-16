@@ -1,22 +1,24 @@
 package chapter10;
 class EmergencyThread implements Runnable {
 	public void run() {
-		for (int i = 1; i < 6; i++) {
+		for (int i = 1; i < 6; i++)
+			System.out.println(Thread.currentThread().getName()+"输入："+i);
+		try {
+			Thread.sleep(5000);
 			System.out.println(Thread.currentThread().getName()
-					+"输入："+i);
-		}
+					+"休眠结束");
+		} catch (InterruptedException e) {e.printStackTrace();}
 	}
 }
 public class Example10 {
 	public static void main(String[] args) throws InterruptedException {
-		// 创建线程
 		Thread thread1 = new Thread(new EmergencyThread(),"thread1");
-		thread1.start(); // 开启线程
+		thread1.start();
 		for (int i = 1; i < 6; i++) {
-			System.out.println(Thread.currentThread().getName()
-					             +"输入："+i);
+			System.out.println(Thread.currentThread().getName()+"输入："+i);
 			if (i == 2) {
-				thread1.join(); // 调用join()方法
+				System.out.println("thread1开始插队");
+				thread1.join();
 			}
 		}
 	}

@@ -22,7 +22,7 @@ public class Example12 {
 		label1.setIcon(icon);
 		// 3、创建一个页尾JPanel面板，并加入JLabel标签组件
 		JPanel panel = new JPanel();
-		JLabel label2 = new JLabel("欢迎进入水果超市",JLabel.CENTER);
+		JLabel label2 = new JLabel("欢迎",JLabel.CENTER);
 		label2.setFont(font);
 		panel.add(label2);
 		// 4、向JFrame聊天窗口容器的顶部和尾部分别加入JLabel和JPanel组件
